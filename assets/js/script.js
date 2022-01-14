@@ -22,3 +22,12 @@ var enterInitialsEl = document.createElement("enterInitials"); // Enter initials
 var enterInitialsTextAreaEl = document.createElement("enterInitialsTextArea"); // TextArea
 var button1234 = document.createElement("button"); // Test answer 1
 var timeLeft = 60; // asignment countdown
+
+// this section will provide the connection of the displays
+answer1BtnEl.style.display = 'none';
+answer2BtnEl.style.display = 'none';
+answer3BtnEl.style.display = 'none';
+answer4BtnEl.style.display = 'none';
+submitScoreEl.style.display = 'none';
+answerCorrectWrong.style.display='none';
+enterInitialsTextArea.style.display='none';
