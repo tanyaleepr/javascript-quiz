@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: 'Merienda';font-size: 22px;
+    font-family:'Times New Roman';
+    font-size: 22px;
     background-color: white;
 }
 
@@ -20,7 +21,7 @@ header {
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    font-family: 'Merienda';font-size: 22px;
+    font-family: 'Times New Roman';font-size: 22px;
   }
 
 .btnHeader {
@@ -30,7 +31,7 @@ header {
     border: 0;
     outline: 0; /* Remove border around button */
     color: blueviolet;
-    font-family: 'Merienda';font-size: 20px;
+    font-family: 'Times New Roman';font-size: 20px;
 }
 
 .btnHeader:hover {
@@ -47,7 +48,7 @@ header {
     outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
-    font-family: 'Merienda';font-size: 10px;
+    font-family: 'Times New Roman';font-size: 10px;
 }
 
 
@@ -60,7 +61,7 @@ header {
     flex-direction: column;
     justify-content: center;
     margin-top: 50px;
-    font-family: 'Merienda';font-size: 22px;
+    font-family: 'Times New Roman';font-size: 22px;
 }
 
 
@@ -72,7 +73,7 @@ header {
     grid-template-columns: repeat(2, 1fr) 2fr 1fr;  /* Create a 4X4 grid of same size*/
     grid-template-rows: repeat(10, 1fr); /* 4 rows of equal size */
     gap: 10px 10px; /* Gap on x and y grid */
-    font-family: 'Merienda';font-size: 22px;
+    font-family: 'Times New Roman';font-size: 22px;
 }
 
 
@@ -120,7 +121,7 @@ header {
     outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
-    font-family: 'Merienda';font-size: 15px;
+    font-family: 'Times New Roman';font-size: 15px;
 }
 
 #start-quiz {
@@ -133,7 +134,7 @@ header {
     background-color: purple;
     place-self: center;
     color: white;
-    font-family: 'Merienda';font-size: 15px;
+    font-family: 'Times New Roman';font-size: 15px;
 }
 
 #answer1 {
@@ -145,7 +146,7 @@ header {
     outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
-    font-family: 'Merienda';font-size: 15px;
+    font-family: 'Times New Roman';font-size: 15px;
     margin-left: 25px;
 }
 
@@ -158,7 +159,7 @@ header {
     outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
-    font-family: 'Merienda';font-size: 15px;
+    font-family: 'Times New Roman';font-size: 15px;
     margin-left: 25px;
     margin-left: 25px;
 
@@ -173,7 +174,7 @@ header {
     outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
-    font-family: 'Merienda';font-size: 15px;
+    font-family: 'Times New Roman';font-size: 15px;
     margin-left: 25px;
 }
 
@@ -186,7 +187,7 @@ header {
     outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
-    font-family: 'Merienda';font-size: 15px;
+    font-family: 'Times New Roman';font-size: 15px;
     margin-left: 25px;
 }
 
@@ -233,7 +234,7 @@ header {
     grid-template-columns: 4fr;  /* Create a 4X4 grid of same size*/
     grid-template-rows: repeat(2, 1fr); /* 4 rows of equal size */
     gap: 10px 10px; /* Gap on x and y grid */
-    font-family: 'Merienda';font-size: 22px;
+    font-family: 'Times New Roman';font-size: 22px;
 
 }
 
