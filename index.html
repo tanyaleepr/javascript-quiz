@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/style.css">
     <title>JavaScript Quiz</title>
 </head>
 <body>
     <header>
-        <div> <!--div for button of View High Scores-->
-            <button class="btnHeader" id="view-high-scores"> View High Scores</button>
+        <div>
+            <button class="btnHeader" id="view-high-scores">View High Scores</button>
         </div>
         <div>
-            <p> Time: <span id="timeLeft">xxx</span></p>
+            <p>Time: <span id="timeLeft">xxx</span></p>
         </div>
+         
     </header>
 
-    <main class="page"> <!--main container for grid-->
-        <div id="questions">
-            <p id="questionDisplay"> Welcome to the JavaScript Quiz!</p>
-            <p id="finalScoreDisplay"></p>
-            <p id="enterInitials"></p>
-            <textarea id="enterInitialsTextArea"></textarea>
-            <button class="btn" id="start-quiz"> Start Quiz</button>
-            <button class="btn" id="answer1"></button>
-            <button class="btn" id="answer2"></button>
-            <button class="btn" id="answer3"></button>
-            <button class="btn" id="answer4"></button>
-            <button class="btn" id="submitScore"></button>
-        </div>
-        <div id="answerCorrectWrongGrid"></div>
-        <p id="answerCorrectWrong"></p>
+        <div id="page"> <!-- Container for grid items -->
+            <main id="container">
+                <p id="question">Welcome to our code Quiz!</p>
+                <p id="finalScoreDisplay"></p>
+                <p id="enterInitials"></p>
+                <textarea id=enterInitialsTextArea></textarea>
+                <button class="btn" id="start-quiz">Start Quiz</button>
+                <button class="btn" id="answer1"></button>
+                <button class="btn" id="answer2"></button>
+                <button class="btn" id="answer3"></button>
+                <button class="btn" id="answer4"></button>
+                <button class="btn" id="submitScore"></button> <!-- Grid nows where to put next item.-->
 
-        </main>
+            </main>
+            <div id="answerCorrectWrong"></div>
+            <p id=answerCorrectWrong></p>
+            </div>
 
-
-
-<script src="./assets/js/script.js"></script>
-
-
-
-
-
+    </section>
     
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family:'Times New Roman';
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 22px;
     background-color: white;
 }
@@ -21,7 +21,8 @@ header {
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    font-family: 'Times New Roman';font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
   }
 
 .btnHeader {
@@ -31,7 +32,8 @@ header {
     border: 0;
     outline: 0; /* Remove border around button */
     color: blueviolet;
-    font-family: 'Times New Roman';font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 .btnHeader:hover {
@@ -48,7 +50,8 @@ header {
     outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
-    font-family: 'Times New Roman';font-size: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
 }
 
 
@@ -61,23 +64,25 @@ header {
     flex-direction: column;
     justify-content: center;
     margin-top: 50px;
-    font-family: 'Times New Roman';font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
 }
 
 
 
 
-#questions {
+#container {
    /* width:65%; /* Contain the grid to a maximum of 80% of the flex wrapper */
     display: grid;
     grid-template-columns: repeat(2, 1fr) 2fr 1fr;  /* Create a 4X4 grid of same size*/
     grid-template-rows: repeat(10, 1fr); /* 4 rows of equal size */
     gap: 10px 10px; /* Gap on x and y grid */
-    font-family: 'Times New Roman';font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
 }
 
 
-#questionDisplay {
+#question {
     text-align: center;
     align-self: baseline;
     grid-column: 2 / span 2;
@@ -121,7 +126,8 @@ header {
     outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
-    font-family: 'Times New Roman';font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
 }
 
 #start-quiz {
@@ -134,7 +140,8 @@ header {
     background-color: purple;
     place-self: center;
     color: white;
-    font-family: 'Times New Roman';font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
 }
 
 #answer1 {
@@ -146,7 +153,8 @@ header {
     outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
-    font-family: 'Times New Roman';font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
     margin-left: 25px;
 }
 
@@ -159,7 +167,8 @@ header {
     outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
-    font-family: 'Times New Roman';font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
     margin-left: 25px;
     margin-left: 25px;
 
@@ -174,7 +183,8 @@ header {
     outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
-    font-family: 'Times New Roman';font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
     margin-left: 25px;
 }
 
@@ -187,7 +197,8 @@ header {
     outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
-    font-family: 'Times New Roman';font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
     margin-left: 25px;
 }
 
@@ -228,13 +239,14 @@ header {
 
 
 
-#answerCorrectWrongGrid {
+#answerCorrectWrong {
     /*width:65%; /* Contain the grid to a maximum of 80% of the flex wrapper */
     display: grid;
     grid-template-columns: 4fr;  /* Create a 4X4 grid of same size*/
     grid-template-rows: repeat(2, 1fr); /* 4 rows of equal size */
     gap: 10px 10px; /* Gap on x and y grid */
-    font-family: 'Times New Roman';font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
 
 }
 
@@ -283,7 +295,7 @@ header {
 
 
 
-    #questionDisplay {
+    #question {
         font-size: 25px;
     }
     
@@ -343,12 +355,12 @@ header {
     }
 
 
-    #page {
+    #mainDiv {
         margin-left: 5%;
         margin-right: 5%;
     }
 
-    #questionDisplay {
+    #question {
         grid-column: 2 / span 2;
         font-size: 15px;
     }
