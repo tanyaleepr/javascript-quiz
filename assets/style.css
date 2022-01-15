@@ -1,3 +1,6 @@
+/* this stylesheet is for JavaScript Quiz */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +14,7 @@ body {
 }
 
 header {
-    display: flex; /* Flex container to display the child elements as flex with space between and wrap */
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
@@ -25,25 +28,26 @@ header {
     font-size: 22px;
   }
 
+  /* this style for header button */
 .btnHeader {
     border-radius: 10px;
     background-color: white;
     text-decoration: none;
     border: 0;
-    outline: 0; /* Remove border around button */
+    outline: 0; 
     color: blueviolet;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
 }
 
+/* hover for header button */
 .btnHeader:hover {
 
     background-color: pink;
-    
-  
-    
+        
 }
 
+/* style for general button */
 .btn {
     border-radius: 12px;
     border: 0;
@@ -55,7 +59,7 @@ header {
 }
 
 
-
+/* style for the main section of the quiz */
 #page {
     margin-left: 25%;
     margin-right: 25%;
@@ -70,18 +74,17 @@ header {
 
 
 
-
+/* style for the items outside and inside the container */
 #container {
-   /* width:65%; /* Contain the grid to a maximum of 80% of the flex wrapper */
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 2fr 1fr;  /* Create a 4X4 grid of same size*/
-    grid-template-rows: repeat(10, 1fr); /* 4 rows of equal size */
-    gap: 10px 10px; /* Gap on x and y grid */
+    grid-template-columns: repeat(2, 1fr) 2fr 1fr; 
+    grid-template-rows: repeat(10, 1fr); 
+    gap: 10px 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 22px;
 }
 
-
+/* style for the questions */
 #question {
     text-align: center;
     align-self: baseline;
@@ -91,6 +94,7 @@ header {
     font-size: 30px;
 }
 
+/* style for the results */
 #finalScoreDisplay {
     
     grid-column: 1 / span 2;
@@ -99,7 +103,7 @@ header {
 }
 
 
-
+/* style for the validation of the scores based on the person's initials */
 #enterInitials {
     
     grid-column: 1 / span 1;
@@ -117,26 +121,28 @@ header {
     
 }
 
+/* style for the score */
 #submitScore {
     grid-column: 3 / span 1;
     grid-row: 7 / span 1;
     padding: 10px 10px 10px 10px;
     border-radius: 10%;
     border: 0;
-    outline: 0; /* Remove border around button */
+    outline: 0; 
     background-color: purple;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
 }
 
+/* style for the start part of the quiz and its answers */
 #start-quiz {
     grid-column: 2 / span 2;
     grid-row: 5 / span 1;
     padding: 10px 10px 10px 10px;
     border-radius: 10%;
     border: 0;
-    outline: 0; /* Remove border around button */
+    outline: 0; 
     background-color: purple;
     place-self: center;
     color: white;
@@ -150,7 +156,7 @@ header {
     padding: 10px 10px 10px 10px;
     border-radius: 10%;
     border: 0;
-    outline: 0; /* Remove border around button */
+    outline: 0; 
     background-color: purple;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -164,7 +170,7 @@ header {
     padding: 10px 10px 10px 10px;
     border-radius: 10%;
     border: 0;
-    outline: 0; /* Remove border around button */
+    outline: 0; 
     background-color: purple;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -180,7 +186,7 @@ header {
     padding: 10px 10px 10px 10px;
     border-radius: 10%;
     border: 0;
-    outline: 0; /* Remove border around button */
+    outline: 0; 
     background-color: purple;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -194,7 +200,7 @@ header {
     padding: 10px 10px 10px 10px;
     border-radius: 10%;
     border: 0;
-    outline: 0; /* Remove border around button */
+    outline: 0; 
     background-color: purple;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -202,49 +208,17 @@ header {
     margin-left: 25px;
 }
 
-
-
-
-
-
-#answer1:hover{
+#answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover, #submitScore:hover{
     
     background-color: pink;
      
 }
 
-#answer2:hover{
-    
-    background-color: pink;
-  
-}
-
-#answer3:hover{
-    
-    background-color: pink;
-  
-}
-
-#answer4:hover{
-    
-    background-color: pink;
-  
-}
-
-#submitScore:hover{
-    
-    background-color: pink;
-  
-}
-
-
-
 #answerCorrectWrong {
-    /*width:65%; /* Contain the grid to a maximum of 80% of the flex wrapper */
     display: grid;
-    grid-template-columns: 4fr;  /* Create a 4X4 grid of same size*/
-    grid-template-rows: repeat(2, 1fr); /* 4 rows of equal size */
-    gap: 10px 10px; /* Gap on x and y grid */
+    grid-template-columns: 4fr; 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px 10px; 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 22px;
 
@@ -258,100 +232,33 @@ header {
 }
 
 
-/* This will be applied on any screen smaller than 768px */
+/* This media query will be applied on any screen smaller than 768px */
 @media screen and (max-width: 768px) {
 
-
-    
-    #answer1:hover{
+   
+    #answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover, #submitScore:hover{
         
         background-color: purple;
         
     }
-
-    #answer2:hover{
-        
-        background-color: purple;
-    
-    }
-
-    #answer3:hover{
-        
-        background-color: purple;
-    
-    }
-
-    #answer4:hover{
-        
-        background-color: purple;
-    
-    }
-
-    #submitScore:hover{
-        
-        background-color: purple;
-    
-    }
-
-
 
     #question {
         font-size: 25px;
     }
     
-    #answer1 {
+    #answer1, #answer2, #answer3, #answer4 {
         grid-column: 2 / span 2;
     }
     
-    #answer2 {
-        grid-column: 2 / span 2;
-           
-    }
-    
-    #answer3 {
-        grid-column: 2 / span 2;
-    }
-    
-    #answer4 {
-        grid-column: 2 / span 2;
-    }
-    
-  
-
 }
-
 
    /* This will be applied on any screen smaller than 575px */
 @media screen and  (max-width: 575px) {
 
-    #answer1:hover{
+    #answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover, #submitScore:hover{
         
         background-color: purple;
         
-    }
-
-    #answer2:hover{
-        
-        background-color: purple;
-    
-    }
-
-    #answer3:hover{
-        
-        background-color: purple;
-    
-    }
-
-    #answer4:hover{
-        
-        background-color: purple;
-    
-    }
-
-    #submitScore:hover{
-        
-        background-color: purple;
-    
     }
 
 
