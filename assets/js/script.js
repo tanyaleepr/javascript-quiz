@@ -17,7 +17,7 @@ var answer3BtnEl = document.getElementById('answer3');
 var answer4BtnEl = document.getElementById('answer4'); 
 var submitScoreEl = document.getElementById('submitScore'); // submittion button
 
-var questionsEl = document.getElementById('questions'); // Questions for the main page
+var questionsEl = document.getElementById('question'); // Questions for the main page
 var pageEl = document.getElementById('page');
 var htmlTimeLeft = document.getElementById('timeLeft'); // Display counter 
 var answerCorrectWrong = document.getElementById('answerCorrectWrong'); 
@@ -244,9 +244,9 @@ startQuizBtnEl.addEventListener("click", function() {
             answer3BtnEl.textContent = answersObject.answers[answerNumber][2];
             answer4BtnEl.textContent = answersObject.answers[answerNumber][3];
            
-            container.appendChild(questionEl);
-            container.appendChild(answer1BtnEl);
-            container.appendChild(finalScoreDisplayEl);
+            gridContainer.appendChild(questionEl);
+            gridContainer.appendChild(answer1BtnEl);
+            gridContainer.appendChild(finalScoreDisplayEl);
             timeLeft -= 1;
             htmlTimeLeft.textContent = timeLeft;
             console.log("time left:" + timeLeft)
@@ -261,7 +261,7 @@ startQuizBtnEl.addEventListener("click", function() {
                     answerCorrectWrong.style.display="";
                     answerCorrectWrong.textContent = "Correct!";
                     answerCorrectWrong.style.borderTop = "solid #800080";
-                    answerCorrectWrong.appendChild(answerCorrectWrong);
+                   // answerCorrectWrong.appendChild(answerCorrectWrong);
                 } else {
 
                     switch(answer1BtnEl.textContent) {
@@ -301,7 +301,7 @@ startQuizBtnEl.addEventListener("click", function() {
                             answerCorrectWrong.style.display=""; 
                             answerCorrectWrong.textContent = "Correct!";
                             answerCorrectWrong.style.borderTop = "solid #800080";
-                            answerCorrectWrong.appendChild(answerCorrectWrong);
+                         //   answerCorrectWrong.appendChild(answerCorrectWrong);
                             //window.alert("Game Over")
                             questionNumber = 0; // Game is over, no more questions to show.
                             answerNumber = 0; 
@@ -339,7 +339,7 @@ startQuizBtnEl.addEventListener("click", function() {
                     answerCorrectWrong.style.display=""; // Enables text content 
                     answerCorrectWrong.textContent = "Correct!";
                     answerCorrectWrong.style.borderTop = "solid #800080";
-                    answerCorrectWrong.appendChild(answerCorrectWrong);
+                  //  answerCorrectWrong.appendChild(answerCorrectWrong);
                     questionNumber = 0; 
                     answerNumber = 0; 
                     console.log("I'm here" + timeInterval);
@@ -420,14 +420,14 @@ startQuizBtnEl.addEventListener("click", function() {
                     answerCorrectWrong.style.display=""; 
                     answerCorrectWrong.textContent = "Correct!";
                     answerCorrectWrong.style.borderTop = "solid #800080";
-                    answerCorrectWrong.appendChild(answerCorrectWrong);
+                //   answerCorrectWrong.appendChild(answerCorrectWrong);
                 } else if (question.textContent === "A very useful tool to debug arrays is:" && answer3BtnEl.textContent === "For loops") {
                     console.log("Correct");
                     questionNumber = 4;
                     answerNumber =3;
                     answerCorrectWrong.style.display="";
                     answerCorrectWrong.style.borderTop = "solid #800080";
-                    answerCorrectWrong.appendChild(answerCorrectWrong);
+                //    answerCorrectWrong.appendChild(answerCorrectWrong);
                 } else if (question.textContent === "The condition statement if/else is enclosed with the following:" && answer3BtnEl.textContent === "Quotes") {
                             console.log("Inside the case now");
                             answerCorrectWrong.style.display="";
@@ -491,7 +491,7 @@ startQuizBtnEl.addEventListener("click", function() {
                     answerCorrectWrong.style.display=""; 
                     answerCorrectWrong.textContent = "Correct!"
                     answerCorrectWrong.style.borderTop = "solid #800080";
-                    answerCorrectWrong.appendChild(answerCorrectWrong);
+                    //answerCorrectWrong.appendChild(answerCorrectWrong);
 
                 } else {
 
@@ -573,7 +573,7 @@ startQuizBtnEl.addEventListener("click", function() {
           startQuizBtnEl.style.display = "";
           clearInterval(timeInterval);
           
-          //container.appendChild(questionEl);
+          //gridContainer.appendChild(questionEl);
     
           //displayMessage();
         }

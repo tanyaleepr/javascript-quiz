@@ -74,8 +74,8 @@ header {
 
 
 
-/* style for the items outside and inside the container */
-#container {
+/* style for the items outside and inside the gridContainer */
+#gridContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr) 2fr 1fr; 
     grid-template-rows: repeat(10, 1fr); 
