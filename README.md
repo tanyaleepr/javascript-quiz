@@ -1,6 +1,6 @@
 # JavaScript Quiz
 
-For this repository, I wrote the HTML, CSS, and JavaScript for this code assestment in creating a multiple-choice question quiz.
+For this project, I used HTML, CSS, and JavaScript for the creation of this multiple-choice question quiz.
 
 ### Tasks
 
